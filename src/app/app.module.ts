@@ -5,14 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BuffComponent } from './buff/buff.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule, MatProgressBarModule, MatButtonModule, MatCardModule } from '@angular/material';
+import { ClickUpgradeComponent } from './click-upgrade/click-upgrade.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    BuffComponent
+    BuffComponent,
+    ClickUpgradeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

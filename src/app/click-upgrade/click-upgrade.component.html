@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-grid-list cols="2" rowHeight="5:1.5">
+    <mat-grid-tile>
+      Drain Power
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button mat-raised-button color="warn" (click)="upgrade()">Upgrade: {{ cost }}</button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
